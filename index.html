@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Meus sites favoritos</title>
+
+    <!-- Estilização da página -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .site {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px
+                rgba(0, 0, 0, 0.10);
+            transition: transform 0.3s;
+        }
+
+        .site:hover {
+            transform: translateY(-7px);
+        }
+
+        .site h2 {
+            margin-bottom: 20px;
+            color: #172554;
+        }
+
+        .site img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .site a {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .site a:hover {
+            background: #1e40af;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal -->
+    <header>
+        <h1>Meus sites favoritos: Bruno Cezar</h1>
+        <p>
+            Tecnologia, conhecimento, programação
+            e criatividade em um só lugar!
+        </p>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+
+        <div class="container">
+
+            <!-- Primeiro site: Google -->
+            <div class="site">
+                <h2>Google</h2>
+
+                <img
+                    src="https://cdn.simpleicons.org/google"
+                    alt="Logo do Google">
+
+                <p>Pesquisa e busca de informações.</p>
+
+                <br>
+
+                <a href="https://www.google.com"
+                   target="_blank">
+                    Visitar site
+                </a>
+            </div>
+
+            <!-- Segundo site: YouTube -->
+            <div class="site">
+                <h2>YouTube</h2>
+
+                <img
+                    src="https://cdn.simpleicons.org/youtube"
+                    alt="Logo do YouTube">
+
+                <p>Vídeos, entretenimento e aprendizagem.</p>
+
+                <br>
+
+                <a href="https://www.youtube.com"
+                   target="_blank">
+                    Visitar site
+                </a>
+            </div>
+
+            <!-- Terceiro site: GitHub -->
+            <div class="site">
+                <h2>GitHub</h2>
+
+                <img
+                    src="https://cdn.simpleicons.org/github"
+                    alt="Logo do GitHub">
+
+                <p>Compartilhamento de projetos e códigos.</p>
+
+                <br>
+
+                <a href="https://github.com"
+                   target="_blank">
+                    Visitar site
+                </a>
+            </div>
+
+            <!-- Quarto site: W3Schools -->
+            <div class="site">
+                <h2>W3Schools</h2>
+
+                <img
+                    src="https://cdn.simpleicons.org/w3schools"
+                    alt="Logo do W3Schools">
+
+                <p>Aprendizado de HTML, CSS e programação.</p>
+
+                <br>
+
+                <a href="https://www.w3schools.com"
+                   target="_blank">
+                    Visitar site
+                </a>
+            </div>
+
+            <!-- Quinto site: Canva -->
+            <div class="site">
+                <h2>Canva</h2>
+
+                <img
+                    src="https://cdn.simpleicons.org/canva"
+                    alt="Logo do Canva">
+
+                <p>Criação de apresentações e designs.</p>
+
+                <br>
+
+                <a href="https://www.canva.com"
+                   target="_blank">
+                    Visitar site
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Desenvolvido por Bruno Cezar</p>
+        <p>Atividade de Desenvolvimento Web - 2026</p>
+    </footer>
+
+</body>
+</html>
